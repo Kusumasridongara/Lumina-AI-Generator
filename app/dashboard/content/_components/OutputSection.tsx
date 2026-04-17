@@ -9,7 +9,7 @@ interface props {
 }
 
 function OutputSection({ aiOutput }: props) {
-  const editorRef: any = useRef();
+  const editorRef: any = useRef(null);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
