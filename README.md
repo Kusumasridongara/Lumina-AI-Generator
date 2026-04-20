@@ -1,69 +1,107 @@
-# 🧠 AI-Content-Generator
+# 🧠 Lumina AI Generator
 
-**AI-Content-Generator** is a powerful full-stack AI-powered web application that leverages Google’s Generative AI to help users effortlessly generate high-quality, context-aware content across multiple formats.
+[![Next.js 15](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Gemini AI](https://img.shields.io/badge/Gemini-1.5-blue?style=for-the-badge&logo=google-gemini)](https://deepmind.google/technologies/gemini/)
+[![Drizzle ORM](https://img.shields.io/badge/Drizzle-ORM-C5F74F?style=for-the-badge&logo=drizzle)](https://orm.drizzle.team/)
 
-## 🚀 Features
+**Lumina AI Generator** is a state-of-the-art, full-stack platform designed for modern creators. Built with a premium "Rich Aesthetic" design system, it leverages Google’s **Gemini 1.5** engine to transform ideas into high-quality, SEO-optimized content in seconds.
 
-- 🔹 **15+ AI-Powered Templates**  
-  Generate blogs, YouTube SEO content, social media posts, grammar correction, code snippets, and more.
+---
 
-- 🔹 **Intelligent Prompt Engineering**  
-  Templates combine user input with predefined instructions for optimized AI responses.
+## 🎨 Premium Experience
 
-- 🔹 **Modern Responsive UI**  
-  Built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui** for a seamless user experience.
+![Premium Landing Page](public/screenshots/landing-page.png)
 
-- 🔹 **Secure Authentication**  
-  Uses **Clerk** for user authentication and session management.
+---
 
-- 🔹 **Serverless PostgreSQL Database**  
-  Integrated with **Neon** and managed using **Drizzle ORM** for scalable and efficient data handling.
+## 📸 Dashboard Preview
 
-- 🔹 **Interactive Dashboard**  
-  Track AI usage in real-time, view content history, and edit content with a rich text editor.
+![Main Dashboard](public/screenshots/dashboard.png)
 
-- 🔹 **Clean Architecture**  
-  Features a modular structure, global state management using **React Context**, and dynamic routing for each content template.
+---
+
+## 🚀 Key Features
+
+- 🎭 **15+ Smart Templates**: Specialized workflows for Blogs, YouTube SEO, social media, and professional coding tasks.
+- 💎 **Aesthetic Design**: A modern UI featuring glassmorphism, gradient meshes, and dynamic transitions.
+- ⚡ **Lightning Fast**: Powered by Next.js 15 App Router for near-instant rendering and performance.
+- 🔐 **Secure Auth**: Integrated with **Clerk** for robust user management and session handling.
+- 💾 **Scalable Database**: Uses **Neon Serverless PostgreSQL** with **Drizzle ORM** for efficient data persistence.
+- 📝 **Rich Text Editor**: Edit and format your generated content with a professional-grade editor.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** Next.js, TypeScript, Tailwind CSS, shadcn/ui  
-- **Backend:** Google Generative AI API, Drizzle ORM  
-- **Auth:** Clerk  
-- **Database:** Neon (serverless PostgreSQL)  
-- **State Management:** React Context API  
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend** | [Next.js 15](https://nextjs.org/), [React 19](https://react.dev/), [Tailwind CSS 4](https://tailwindcss.com/) |
+| **AI Engine** | [Google Generative AI (Gemini 1.5)](https://ai.google.dev/) |
+| **Auth** | [Clerk](https://clerk.com/) |
+| **Database** | [Neon DB](https://neon.tech/) (PostgreSQL) |
+| **ORM** | [Drizzle ORM](https://orm.drizzle.team/) |
+| **Payments** | [Razorpay](https://razorpay.com/) |
 
-## 📸 Screenshots
-<img width="1438" height="787" alt="Screenshot 2025-07-08 at 11 31 56 AM" src="https://github.com/user-attachments/assets/353def96-ff17-42e2-9262-b22ddbac6c6d" />
-<img width="1440" height="786" alt="Screenshot 2025-07-08 at 11 34 41 AM" src="https://github.com/user-attachments/assets/4a58dbdf-8c59-4429-bc76-1312e1994db5" />
-<img width="1440" height="787" alt="Screenshot 2025-07-08 at 11 48 41 AM" src="https://github.com/user-attachments/assets/ce2f5a6d-df7f-4ba8-881c-2b13fafe5c6f" />
-<img width="1439" height="697" alt="Screenshot 2025-07-08 at 11 49 11 AM" src="https://github.com/user-attachments/assets/cf88d2f2-f43b-44a3-bad2-1e0e620e4bf9" />
+---
 
+## 🔐 Secure Authentication
 
+![Auth Experience](public/screenshots/auth-page.png)
 
-## ✅ Getting Started
+---
 
-### 1. Clone the repository
+## 🏁 Getting Started
 
-git clone https://github.com/your-username/ai-content-generator.git
-
-### 2. Install Dependencies
-
-npm install
-or
-yarn install
-
-### 3. Set up environment variables
-
-```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_key
-CLERK_SECRET_KEY=your_key
-DATABASE_URL=your_neon_db_url
-GENAI_API_KEY=your_google_genai_key
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Kusumasridongara/Lumina-AI-Generator.git
+cd Lumina-AI-Generator
 ```
 
-### 4. Run the server
+### 2. Install Dependencies
+```bash
+npm install --legacy-peer-deps
+```
 
+### 3. Environment Configuration
+Create a `.env.local` file in the root directory and add the following:
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+CLERK_SECRET_KEY=your_clerk_secret
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+DATABASE_URL=your_neon_db_url
+
+NEXT_PUBLIC_GOOGLE_GEMINI_API_KEY=your_gemini_key
+```
+
+### 4. Database Setup
+```bash
+npm run db:push
+```
+
+### 5. Launch Development Server
+```bash
 npm run dev
-or
-yarn dev
+```
+Open [http://localhost:3000](http://localhost:3000) to see your premium AI application in action!
+
+---
+
+## 📊 AI Templates Available
+
+- **Blog Content & Titles**: Viral-worthy ideas and full-article generation.
+- **YouTube Tools**: SEO titles, descriptions, and tag optimization.
+- **Rewriting Tools**: Plagiarism-free rewriting and text improvement.
+- **Social Media**: Instagram post and hashtag generators.
+- **Coding Assistant**: AI-powered code generation and line-by-line explanation.
+
+
+![Explain Code Live Example](public/screenshots/explain-code-example.png)
+
+---
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
