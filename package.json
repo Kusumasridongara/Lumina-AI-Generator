@@ -1,8 +1,8 @@
 {
-  "name": "ai-content-generator",
+  "name": "lumina-ai-generator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/tejaswi-ramineni/AI-Content-Generator",
+  "homepage": "https://github.com/Kusumasridongara/Lumina-AI-Generator",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

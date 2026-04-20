@@ -4,6 +4,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Gemini AI](https://img.shields.io/badge/Gemini-1.5-blue?style=for-the-badge&logo=google-gemini)](https://deepmind.google/technologies/gemini/)
 [![Drizzle ORM](https://img.shields.io/badge/Drizzle-ORM-C5F74F?style=for-the-badge&logo=drizzle)](https://orm.drizzle.team/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://lumina-ai-generator.vercel.app/)
 
 **Lumina AI Generator** is a state-of-the-art, full-stack platform designed for modern creators. Built with a premium "Rich Aesthetic" design system, it leverages Google’s **Gemini 1.5** engine to transform ideas into high-quality, SEO-optimized content in seconds.
 
